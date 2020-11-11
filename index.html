@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ordenar</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="librerias/bootstrap.min.css">
+	<script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	 <script src=" https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	 <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+	 <script>
+	 	
+	 	$(document).ready(function () {
+	 		$('[data-toggle="popover"]').popover();
+	 		// body...
+	 	});
+	 </script>
+	 <style>
+	 form
+	 {
+	 	/*margen inf y sup es de 5%
+	 	margen  
+	 	*/
+	 	margin:5% 25%;
+	 	/* matgen superior*/
+	 	margin-top:8%;
+	 }
+	</style>
+</head>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="index.html">
+<img src="img/Tlalp.png" width="80px">
+
+  </a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav">
+
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Inicio</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="venta.html">Ventas</a>
+    </li>
+  
+    <li class="nav-item">
+      <a class="nav-link" href="ubicacion.html">Ubicación</a>
+    </li>
+ 
+  </ul>
+</nav>
+<body >
+<div class="jumbotron jumbotron-fluid">
+<div class="container">
+    <h1 class="display-4">Ingresa Los Datos</h1>
+    <p class="lead">Todos los productos tienen garantia por 30 dias. Y las entregas son unicamente en Tlalpexco</p>
+ 
+<form action="form.php" method="post">
+	<div class="form-group">
+		<a href="#" title="Significado" data-toggle="popover" data-trigger="hover" data-content="Identificador del producto">
+			<label>Id Producto</label>
+		 </a>
+		 
+		<input type="text" class="form-control" name="CTidprod">
+	</div>
+	<div class="form-group">
+		<a href="#" title="Significado" data-toggle="popover" data-trigger="hover" data-content="Direccion del usuario">
+		<label>Cupón</label>
+		</a>
+		<input type="text"  class="form-control" name="CTdescripcion">
+	</div>
+	<div class="form-group">
+		<a href="#" title="Significado" data-toggle="popover" data-trigger="hover" data-content="Telefono del usuario">
+		<label>Precio </label>
+		</a>
+		<input type="decimal" class="form-control"  name="CTprecio">
+	</div>
+	<div class="form-group">
+		<a href="#" title="Significado" data-toggle="popover" data-trigger="hover" data-content="Unidades de empaque">
+		<label>Piezas: </label>
+		</a>
+		<select name="CTunidades" class="form-control">
+			<option >1</option>
+			<option >2</option>
+			<option >3</option>
+			<option >4</option>
+		</select>
+	</div>
+	<input type="submit" class="btn btn-info" value="Enviar">
+	<input type="reset" class="btn btn-info" value="Borrar">
+</form>
+ </div>
+</div>
+</body>
+</html>
